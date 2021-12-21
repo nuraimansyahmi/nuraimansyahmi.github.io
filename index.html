@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title -->
+    <title>Welcome - Nuraiman Syahmi</title>
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- For Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+</head>
+
+<!-- Body -->
+<body>
+    <!-- Navigation -->
+    <section class="header">
+        <nav>
+            <a href="index.html"> <img src="img/logox2.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                 <!--icon for smaller devices / opened navigation-->
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html" class="current">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Education.html">Education</a></li>
+                    <li><a href="Experience.html">Experience</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!--icon for smaller devices / opened navigation-->
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <!--Navigation Ends-->
+        <!--Content-->
+        <div class="text-box">
+            <h1>welcome.</h1>
+            <p>Muhammad Nuraiman Syahmi</p>
+            <a href="About.html" class="about-btn">Start</a>
+        </div>
+        <!--Content End-->
+
+       <!-- Start Footer -->
+       <footer class="footer">
+            <div class="container">
+                <small class="copyright pull-left">Copyrights © 2021 All Rights Reserved By <a href="###">Nuraiman</a>.</small>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    </section>
+       
+<!--JS toggle-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+</body>
+</html>
