@@ -160,6 +160,9 @@ nav .fas{
     font-style: italic;
     font-size: 20px;
   }
+  .header img{
+    max-height: 5vh;
+  }
   .nav-links ul li{
     display: block;
   }
