@@ -216,10 +216,13 @@ nav .fas{
 }
 
 @media(max-width: 700px) {
+  .footer .pull-right {
+    float: none !important;
+  }
   .footer .copyright {
     display: block;
     width: 100%;
-    padding-bottom: 15px;
+    margin-top: 0;
   }
   
 }
