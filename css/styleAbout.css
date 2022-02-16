@@ -5,6 +5,7 @@
 }
 html{
   scroll-behavior: smooth;
+  background-color: #D6D6DD;
 }
 /*************
  * SCROLLBAR *
@@ -277,3 +278,301 @@ nav .fas{
 /***************************
  * BACK TO TOP BUTTON ENDS *
  ***************************/
+/*****************
+ * CONTENT START *
+ *****************/
+ .content{
+   width: 100%;
+   margin: auto;
+
+ }
+/*****************
+ * CONTENT INTRO *
+ *****************/
+ .intro{
+   padding-top: 10vh;
+   padding-bottom: 5vh;
+   background-color: #E7EED0;
+ }
+
+ .intro h1{
+   text-align: center;
+   color: #501e61;
+   font-size: 28px;
+ }
+
+ .intro p{
+   margin-top: 10px;
+   text-align: left;
+   font-size: 18px;
+   color: #555555;
+   margin-right: 10%;
+   margin-left: 10%;
+ }
+/**********************
+ * CONTENT INTRO ENDS *
+ **********************/
+
+/*********************
+ * CONTENT TIMELINE *
+ *********************/
+/***********************
+ *     .TIMELINE{      *
+ *  MARGIN-TOP: 5VH;   *
+ * MARGIN-BOTTOM: 5VH; *
+ *          }          *
+ ***********************/
+ *{
+   box-sizing: border-box;
+ }
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: #501e61;
+  top: 45px;
+  bottom: 45px;
+  left: 50%;
+  margin-left: -1px;
+}
+ .timeline h1{
+   text-align: center;
+   color: #D6D6DD;
+   background-color: #501e61; 
+   font-size: 28px;
+  }
+
+  .timeline .tbc{
+    text-align: center;
+    color: #D6D6DD;
+    background-color: #501e61; 
+    font-size: 28px;
+  }
+
+  .container {
+    padding: 15px 30px;
+    position: relative;
+    background: inherit;
+    width: 50%;
+  }
+  
+  .container.left {
+    left: 0;
+  }
+  
+  .container.right {
+    left: 50%;
+  }
+  
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: calc(50% - 8px);
+    right: -10px;
+    background: #501e61;
+    border: 2px solid #501e61;
+    border-radius: 16px;
+    z-index: 1;
+  }
+  
+  .container.right::after {
+    left: -10px;
+  }
+  
+  .container::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    top: calc(50% - 1px);
+    right: 8px;
+    background: #501e61;
+    z-index: 1;
+  }
+  
+  .container.right::before {
+    left: 8px;
+  }
+  
+  .container .date {
+    position: absolute;
+    display: inline-block;
+    top: calc(50% - 8px);
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #501e61;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+  }
+  
+  .container.left .date {
+    right: -100px;
+  }
+  
+  .container.right .date {
+    left: -100px;
+  }
+  
+  .container i {
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 9px 0;
+    top: calc(50% - 20px);
+    background: #D6D6DD;
+    border: 2px solid #501e61;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #501e61;
+    z-index: 1;
+  }
+  
+  .container.left i {
+    right: 56px;
+  }
+  
+  .container.right i {
+    left: 56px;
+  }
+  
+  .container .content {
+    padding: 30px 90px 30px 30px;
+    background: #a3bfe4;
+    position: relative;
+    border-radius: 0 500px 500px 0;
+  }
+  
+  .container.right .content {
+    padding: 30px 30px 30px 90px;
+    border-radius: 500px 0 0 500px;
+  }
+  
+  .container.right .content h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #501e61;
+    text-align: right;
+  }
+  .container.left .content h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #501e61;
+    text-align: left;
+  }
+  
+  .container.right .content p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    text-align: right;
+  }
+  .container.left .content p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    text-align: left;
+  }
+
+  .timeline .container.container.right img{
+    width: 75%;
+    padding-top: 4%;
+    margin-left: 25%;
+  }
+  .timeline .container.container.left img{
+    width: 75%;
+    padding-top: 4%;
+    margin-right: 10%;
+  }
+  
+  @media (max-width: 700px) {
+    .timeline::after {
+      left: 90px;
+    }
+  
+    .container {
+      width: 100%;
+      padding-left: 120px;
+      padding-right: 30px;
+    }
+  
+    .container.right {
+      left: 0%;
+    }
+  
+    .container.left::after, 
+    .container.right::after {
+      left: 82px;
+    }
+  
+    .container.left::before,
+    .container.right::before {
+      left: 100px;
+      border-color: transparent #501e61 transparent transparent;
+    }
+  
+    .container.left .date,
+    .container.right .date {
+      right: auto;
+      left: 0;
+      max-width: 20%;
+      text-align: right;
+    }
+  
+    .container.left i,
+    .container.right i {
+      right: auto;
+      left: 146px;
+    }
+  
+    .container.left .content,
+    .container.right .content {
+      padding: 30px 30px 30px 90px;
+      border-radius: 500px 0 0 500px;
+    }
+    .container.right .content h2 {
+      margin: 0 0 10px 0;
+      font-size: 15px;
+      color: #501e61;
+      text-align: right;
+    }
+    .container.left .content h2 {
+      margin: 0 0 10px 0;
+      font-size: 15px;
+      color: #501e61;
+      text-align: right;
+    }
+    
+    .container.right .content p {
+      margin: 0;
+      font-size: 13px;
+      line-height: 22px;
+      color: #000000;
+      text-align: right;
+    }
+    .container.left .content p {
+      margin: 0;
+      font-size: 13px;
+      line-height: 22px;
+      color: #000000;
+      text-align: right;
+    }
+  }
+
+/*******************
+ * END OF TIMELINE *
+ *******************/

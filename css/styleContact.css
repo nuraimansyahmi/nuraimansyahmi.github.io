@@ -337,11 +337,42 @@ nav .fas{
   padding: 0;
   color: #909090;
 }
+
+.contact-col div p a {
+  color: #501e61;
+}
+
+.contact-col div p a:visited {
+  color: #501e61;
+}
+
+.contact-col div p a:hover {
+  color: #b055ce;
+}
+
+.contact-col div p a:active {
+  color: #0e7fdb;
+}
 .contact-col div h5{
   font-size: 20px;
   margin-bottom: 5px;
-  color: #555;
+  color: #555555;
   font-weight: 400;
+}
+.contact-col div h5 a {
+  color: #501e61;
+}
+
+.contact-col div h5 a:visited {
+  color: #501e61;
+}
+
+.contact-col div h5 a:hover {
+  color: #b055ce;
+}
+
+.contact-col div h5 a:active {
+  color: #0e7fdb;
 }
 
 .contact-col input, .contact-col textarea{
